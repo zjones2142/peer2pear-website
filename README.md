@@ -1,6 +1,10 @@
-# Peer2Pear Website
+<p align="center">
+  <img src="images/logo.svg" alt="Peer2Pear Logo" width="200">
+</p>
 
-Project website for **Peer2Pear** — an end-to-end encrypted peer-to-peer messaging and file sharing application built as a senior capstone project (CMP_SC 4980) at the University of Missouri - Columbia.
+<h1 align="center">Peer2Pear.com</h1>
+
+<p align="center">Project website for <strong>Peer2Pear</strong> — an end-to-end encrypted peer-to-peer messaging and file sharing application built as a senior capstone project (CMP_SC 4980) at the University of Missouri - Columbia.</p>
 
 ## About
 
