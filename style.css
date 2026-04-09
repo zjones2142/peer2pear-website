@@ -444,8 +444,20 @@ img { max-width: 100%; display: block; }
   .tech-grid { grid-template-columns: 1fr; }
   .steps-grid { flex-direction: column; align-items: center; gap: 24px; }
   .step-line { width: 1px; height: 30px; }
-  .arch-diagram { flex-direction: column; }
-  .arch-arrow svg { transform: rotate(90deg); }
+  .arch-diagram { flex-direction: column; gap: 0; padding: 24px 16px; }
+  .arch-node { min-width: 0; width: 100%; max-width: 280px; }
+  .arch-arrow { padding: 4px 0; }
+  .arch-arrow svg { display: none; }
+  .arch-arrow::before {
+    content: ''; display: block; width: 2px; height: 28px;
+    background: var(--lime); margin: 0 auto;
+  }
+  .arch-arrow::after {
+    content: ''; display: block; width: 0; height: 0;
+    border-left: 6px solid transparent; border-right: 6px solid transparent;
+    border-top: 8px solid var(--lime); margin: 0 auto;
+  }
+  .arch-arrow-label { font-size: 0.65rem; order: -1; }
   .section { padding: 64px 0; }
   .hero { padding: 100px 24px 80px; }
   .hero-logo { width: 180px; height: 180px; border-radius: 28px; margin-bottom: 28px; }
@@ -471,8 +483,9 @@ img { max-width: 100%; display: block; }
 [data-theme="light"] .section-lime .section-title.dark { color: #1a1d23; }
 [data-theme="light"] .section-lime .section-text.dark { color: #1a1d23; }
 [data-theme="light"] .section-lime .pill-dark { border-color: rgba(26, 29, 35, 0.3); color: #1a1d23; }
-[data-theme="light"] .section-lime .btn-dark { background: #1a1d23; color: var(--lime); }
-[data-theme="light"] .section-lime .btn-dark-outline { border-color: rgba(26, 29, 35, 0.3); color: #1a1d23; }
+[data-theme="light"] .section-lime .btn-dark { background: #1a1d23; color: #b5c327; border-color: #1a1d23; }
+[data-theme="light"] .section-lime .btn-dark-outline { border-color: #1a1d23; color: #1a1d23; }
+[data-theme="light"] .section-lime .btn-dark-outline:hover { background: #1a1d23; color: #b5c327; }
 [data-theme="light"] .feature-card { background: var(--bg-card); border-color: var(--border); }
 [data-theme="light"] .crypto-card { background: var(--bg-card); }
 [data-theme="light"] .algo-card { background: var(--bg-card); }
