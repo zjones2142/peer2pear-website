@@ -12,7 +12,7 @@ This is a static single-page website showcasing the Peer2Pear application, its a
 
 ## Live Site
 
-Visit the deployed site: [peer2pear-website](https://peer2pear.com/)
+Visit the deployed site: [https://peer2pear.com/](https://peer2pear.com/)
 
 ## Features
 
